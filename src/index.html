@@ -1,32 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Semántica en HTML</title>
 </head>
+
 <body>
     <div class="header">
         <h1>Rick Sánchez</h1>
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Skills</a>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Acerca de</a>
+                </li>
+                <li>
+                    <a href="#">Skills</a>
                     <ul>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#">JAVASCRIPT</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Contacto</a></li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="banner">
         <h1>Rick Sánchez</h1>
-        <h2>Científico, Visionario y Anarquista.  Programando desde 2007</h2>
+        <h2>Científico, Visionario y Anarquista. Programando desde 2007</h2>
+    </div>
+    <div class="acerca">
+        <h1>Acerca de Mi</h1>
+        <p>Rick Sánchez, es un viejo científico alcohólico que acostumbra a hablar de manera vulgar y entre eructos, la mayoría
+            de las veces tiene un rastro de saliva en la boca. Es padre de Beth Smith y el abuelo materno de Summer y Morty.
+            Es un hombre que ha pasado gran parte de su vida viajando a través de diversas dimensiones, en el tiempo y por
+            diversas regiones del universo. Para él, la Tierra se llama Planeta Tierra de la Dimensión C-137. Es irresponsable,
+            asocial, chiflado, ambicioso y desconsiderado ante su propia familia, criticando en numerosas ocasiones a su
+            yerno Jerry por ser un idiota (ademas de desempleado)</p>
+    </div>
+    <div class="skills">
+        <h1>Skills</h1>
+        <div class="skill">
+            <img src="http://placehold.it/400x300" alt="Icon 1">
+            <h2>Html</h2>
+            <p>El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento externo a la página
+                (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que
+                se hace una referencia a la ubicación de dicho elemento mediante texto. De este modo, la página web contiene
+                solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos
+                los elementos y visualizar la página final</p>
+            <a href="#">Más Info</a>
+        </div>
+        <div class="skill">
+            <img src="http://placehold.it/400x300" alt="Icon 1">
+            <h2>Css</h2>
+            <p>ECSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación
+                de este, características tales como las capas o layouts, los colores y las fuentes</p>
+            <a href="#">Más Info</a>
+        </div>
+        <div class="skill">
+            <img src="http://placehold.it/400x300" alt="Icon 1">
+            <h2>Javascript</h2>
+            <p>JavaScript se diseñó con una sintaxis similar a C, aunque adopta nombres y convenciones del lenguaje de programación
+                Java. Sin embargo, Java y JavaScript tienen semánticas y propósitos diferentes</p>
+            <a href="#">Más Info</a>
+        </div>
+
+    </div>
+
+    <div class="contacto">
+        <h1>Contacto</h1>
+        <form>
+            <div>
+                <label for="nombre">Nombre:
+                    <input type="text" id="nombre" name="nombre">
+                </label>
+            </div>
+            <div>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email">
+                </label>
+            </div>
+            <div>
+                <label for="ciudad">Desde qué ciudad escribes?:
+                    <select name="ciudad" id="ciudad">
+                        <option value="med">Medellín</option>
+                        <option value="bog">Bogotá</option>
+                        <option value="cal">Cali</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Rick Sánchez</p>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
     </div>
 </body>
+
 </html>
